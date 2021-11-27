@@ -12,7 +12,7 @@ p {
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background: url(https://github.com/marckoxx/test/blob/main/ruspil.jpg?raw=true) no-repeat center/cover;
+	background: url(https://raw.githubusercontent.com/marckoxx/test/main/ruspil.jpg) no-repeat center/cover;
 	background-attachment: fixed;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: rgb(225, 225, 255, 0);
