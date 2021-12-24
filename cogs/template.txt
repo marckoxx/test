@@ -1,0 +1,28 @@
+import discord
+from discord.ext import commands
+
+class Misc(commands.Cog):
+    def __init__(self, client):
+        self.client = client
+
+    @commands.command()
+    async def ping(self, ctx):
+        await ctx.send(f'Pong! {round(self.client.latency * 1000)}ms')
+
+    @commands.command()
+    async def sample(self, ctx):
+        embed = discord.Embed(title = (f"Sample Embed"), description = (f"This is sample embed"), color = discord.Color.purple())
+        embed = discord.Embed(title = (f"Sample Embed"), color = discord.Color.purple())
+        await ctx.send(embed = embed)
+
+
+    def is_it_me(ctx):
+        return ctx.author.id == 415482851388030978
+
+    @client.command()
+    @commands.check(is_it_me)
+    async def example(ctx):
+        await ctx.send(f'Hi {ctx.author}')
+        
+def setup(client):
+    client.add_cog(Misc(client))
