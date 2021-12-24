@@ -101,4 +101,4 @@ for filename in os.listdir('/home/mitsuru/Documents/Projects/vsauce/cogs/'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('ODQ4ODYwODAwNDcwMzUxOTIy.YLSxOQ.grfmx9CiEHaOMPhmDhMGHvTL9d8')
+client.run('')
